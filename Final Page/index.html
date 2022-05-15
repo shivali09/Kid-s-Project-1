@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>project</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+  <body>
+    <main class="main-content">
+      <div class="container">
+      <!--Top navigation bar-->
+      <section class="header-section">
+        <header class="header">
+          <div class="topnav-left">
+            <div>
+                <a href="Home"><img src="./logo/logo.png" alt=""></a>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">
+                Topics <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="#">Math</a>
+                <a href="#">GK</a>
+                <a href="#">Hobbies</a>
+                <a href="#">BodyParts</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn"> Contest </button>
+              <div class="dropdown-content">
+                <a href="#">Lunch On 15 July</a>
+              </div>
+            </div>
+          </div>
+          <div class="topnav-right">
+            <!-- Search Box -->
+              <div class="box">
+                <form name="search">
+                    <input type="text" class="input" name="txt" 
+                    onmouseout="document.search.txt.value = ''">
+                </form>
+              </div>
+              
+              <!-- Login -->
+              <div class="login">
+                <button onclick="onSignIn()">Login</button>
+              </div>
+
+              <!-- SignUp -->
+              <div class="login">
+                <button onclick="onSignUp()">Sign Up</button>
+              </div>
+          </div>
+          <div class="overlay-containers">
+            <div id="overlaySignIn" onclick="offSignIn()">
+                <div id="form">
+                    <h2>Login</h2>
+                    <div class="form-element">
+                      <label for="email">Email</label>
+                      <input type="text" id="email" placeholder="Enter your email">
+                  </div>
+                    <div class="form-element">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="Enter your password">
+                    </div>
+                    <div class="checkbox-element">
+                        <input type="checkbox" id="remember-me">
+                        <label for="remember-me">Remember me</label>
+                    </div>
+                    <div class="form-element">
+                        <a href="#">Forgot password?</a>
+                    </div>
+                    <button>Sign In</button>
+                </div>
+            </div>
+
+            <div id="overlaySignUp" onclick="offSignUp()">
+                <div id="signUpForm">
+                    <h3>Create Account</h3>
+                    <div class="form-element">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Enter your name">
+                    </div>
+                    <div class="form-element">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" placeholder="Enter your email">
+                    </div>
+                    <div class="form-element">
+                        <label for="contact">Contact</label>
+                        <input type="tel" id="contact" placeholder="Enter your contact number">
+                    </div>
+                    <div class="form-element">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="Enter your password">
+                    </div>
+                    <button>Sign Up</button>
+                </div>
+            </div>
+        </div>
+        </header>
+      </section>
+      </div>
+      <!---content of the page-->
+      <section class="page-content-section"></section>
+      
+      <!--Footer of the page-->
+
+      
+      <!-- Used a container Try to Practice this -->
+      <div class="container">
+        <footer>
+          <section class="ft-main">
+            <div class="ft-main-item">
+              <h2 class="ft-title">About</h2>
+              <ul>
+                <li><a href="#">Our Projects</a></li>
+                <li><a href="#">Careers</a></li>
+              </ul>
+            </div>
+            <div class="ft-main-item">
+              <h2 class="ft-title">Resources</h2>
+              <ul>
+                <li><a href="#">Docs</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">eBooks</a></li>
+              </ul>
+            </div>
+            <div class="ft-main-item">
+              <h2 class="ft-title">Support</h2>
+              <ul>
+                <li><a href="#">Support Request</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+            <div class="ft-main-item">
+              <h2 class="ft-title">Stay Updated</h2>
+              <p>Subscribe to our newsletter to get our latest news.</p>
+              <form>
+                <input type="email" name="email" placeholder="Enter email address"/>
+                <input type="submit" value="Subscribe" />
+              </form>
+            </div>
+          </section>
+
+          <!-- Footer legal -->
+          <section class="ft-legal">
+            <ul class="ft-legal-list">
+              <li><a href="#">Terms &amp; Conditions</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li>&copy; 2022 Copyright</li>
+            </ul>
+          </section>
+        </footer>
+      </div>
+    </main>
+    <script>
+      function onSignIn() {
+        document.getElementById("overlaySignIn").style.display = "block";
+      }
+      
+      function offSignIn() {
+        document.getElementById("overlaySignIn").style.display = "none";
+      }
+
+      function onSignUp() {
+        document.getElementById("overlaySignUp").style.display = "block";
+      }
+      
+      function offSignUp() {
+        document.getElementById("overlaySignUp").style.display = "none";
+      }
+      </script>
+  </body>
+</html>
