@@ -50,6 +50,12 @@ body {
   font-weight: 600; 
 }
 
+.topnav-right{
+  display: flex;
+  justify-content: right;
+  padding-right: 60px;
+}
+
 
 .dropdown {
   float: left;
@@ -70,7 +76,7 @@ body {
 }
 
 .dropdown:hover .dropbtn {
-  background-color: rgb(65, 150, 235);
+  text-decoration:underline;
 }
 
 .dropdown-content {
