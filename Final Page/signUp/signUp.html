@@ -10,7 +10,7 @@
         <title>SignUp</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="./signUp.css">
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -38,7 +38,9 @@
                 <div class="form-element">
                     <input type="password" id="password" placeholder="Enter your password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 6 or more characters" required>
                 </div>
-                <input type="submit" value="Sign Up" onclick="showMore()">
+                <div>
+                  <a href="#"><button type="submit" value="Sign Up">Sign Up</button></a>
+                </div>
             </div>
             </section>
 
@@ -88,10 +90,5 @@
                 </footer>
               </div>
         </main>
-        <script>
-          function showMore(){
-            document.getElementById("sample").style.display="block";
-          }
-        </script>
     </body>
 </html>
