@@ -1,90 +1,70 @@
-*{
-  margin: 0px;
-  padding: 0px;
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 body {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   height: 100vh;
   background-color: white;
 }
 
-.main-content{
-  display:grid;
-  grid-template-rows: 0.4fr 4.2fr 1fr;
+.main-content {
+  display: grid;
+  grid-template-rows: 0.1fr 6fr 2fr;
 }
 
-
-.header-section{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #FFC94B;
+.header-section {
+  background-color: #ffc94b;
   grid-row: span 1;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
-.page-content-section{
+.page-content-section {
   background-image: url(https://img.freepik.com/free-photo/adorable-cute-girl-reading-storytelling-concept_53876-138104.jpg?size=626&ext=jpg&ga=GA1.2.1503742435.1652435681);
   background-repeat: no-repeat;
   background-size: 100%;
-  grid-row: span 1/span 2;
+  grid-row: span 1 / span 2;
 }
 
-.header{
-  display: grid;
-  grid-template-columns: 2.5fr 5.5fr;
-}
-
-.topnav-left{
+.header {
   display: flex;
-  justify-content:left;
-  gap: 100px;
-  align-items: left;
+  justify-content: space-between;
 }
 
-
-.topnav-left p{
-  font-size: 20px;
-  padding-top: 6px;
-  color: white; 
-  font-weight: 600; 
-}
-
-.topnav-right{
+.topnav-left {
   display: flex;
-  justify-content: right;
-  padding-right: 60px;
+  gap: 3rem;
 }
-
 
 .dropdown {
   float: left;
   overflow: hidden;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
 }
 
 .dropdown .dropbtn {
-  font-size: 20px;  
+  font-size: 1.2rem;
   border: none;
   outline: none;
   color: white;
-  padding: 5px;
   background-color: inherit;
   font-weight: 600;
-  
 }
 
 .dropdown:hover .dropbtn {
-  text-decoration:underline;
+  text-decoration: underline;
 }
 
 .dropdown-content {
   display: none;
-  position: absolute;
+  position: fixed;
   background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  min-width: 4rem;
+  box-shadow: 0rem 0.2rem 2rem 0rem rgb(0 0 0 / 20%);
   z-index: 1;
 }
 
@@ -105,44 +85,43 @@ body {
   display: block;
 }
 img {
-    width: 100px;
-    height: 90px;
-    margin: -10px;
+  width: 5rem;
+  height: 5.625rem;
+  margin: -0.625rem;
+  padding-top: 0.5rem;
 }
 
 /* Search Box */
 
-
-.box input{
-  width: 350px;
+.box input {
+  width: 20rem;
   background: gray;
   opacity: 65%;
   border-radius: 5px;
-  margin-top: 210px;
-  margin-left: 40px;
-  padding: 10px;
-  height: 60px;
+  margin-top: 7rem;
+  margin-left: 2rem;
+  padding: 1rem;
+  height: 3rem;
   border: none;
-  font-size: 25px;
+  font-size: 1.5rem;
   color: white;
   outline: none;
   font-weight: 700;
 }
 
-.box input::placeholder{
-  font-size: 25px;
+.box input::placeholder {
+  font-size: 1rem;
   color: white;
   font-weight: 700;
 }
 
-.box .search-button{
-  width: 100px;
-  background: #FFC94B;
+.box .search-button {
+  width: 7rem;
+  background: #ffc94b;
   border-radius: 5px;
-  padding: 10px;
-  height: 60px;
+  height: 3rem;
   border: none;
-  font-size: 25px;
+  font-size: 1.5rem;
   color: white;
   outline: none;
   font-weight: 700;
@@ -241,6 +220,6 @@ input[type="submit"] {
 }
 /* one before the last child */
 .ft-legal-list li:nth-last-child(2) {
-    flex: 1;
+  flex: 1;
 }
 /* Footer */
