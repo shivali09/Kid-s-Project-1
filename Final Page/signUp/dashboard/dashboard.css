@@ -1,42 +1,20 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-body {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  height: 100vh;
-  background-color: white;
 }
-
-.main-content {
-  display: grid;
-  grid-template-rows: 0.1fr 6fr 2fr;
-}
-
-.header-section {
+/*Header start*/
+.header-container {
   background-color: #ffc94b;
-  grid-row: span 1;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  color: white;
 }
 
-.page-content-section {
-  background-image: url(https://img.freepik.com/free-photo/adorable-cute-girl-reading-storytelling-concept_53876-138104.jpg?size=626&ext=jpg&ga=GA1.2.1503742435.1652435681);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  grid-row: span 1 / span 2;
-}
-
-.header {
+.navbar {
   display: flex;
   justify-content: space-between;
-}
-
-.topnav-left {
-  display: flex;
-  gap: 3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .dropdown {
@@ -84,14 +62,23 @@ body {
 .dropdown:hover .dropdown-content {
   display: block;
 }
-img {
-  width: 5rem;
-  height: 5.625rem;
-  margin: -0.625rem;
-  padding-top: 0.5rem;
+
+.navbar-left {
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
 }
 
-/* Search Box */
+/* Header end*/
+
+/* Main start*/
+.main-container {
+  background-color: black;
+  background-image: url(https://img.freepik.com/free-photo/adorable-cute-girl-reading-storytelling-concept_53876-138104.jpg?size=626&ext=jpg&ga=GA1.2.1503742435.1652435681);
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  background-size: cover;
+}
 
 .box input {
   width: 20rem;
@@ -101,9 +88,9 @@ img {
   margin-top: 7rem;
   margin-left: 2rem;
   padding: 1rem;
-  height: 3rem;
-  border: none;
-  font-size: 1.5rem;
+  height: 1rem;
+  border: 2px solid #ffc94b;
+  font-size: 1rem;
   color: white;
   outline: none;
   font-weight: 700;
@@ -120,20 +107,20 @@ img {
   background: #ffc94b;
   border-radius: 5px;
   height: 3rem;
-  border: none;
-  font-size: 1.5rem;
+  border: 3px solid #ffc94b;
+  font-size: 1rem;
   color: white;
   outline: none;
   font-weight: 700;
 }
-/* Search Box Over */
 
-/* Footer */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+/*Main end */
+
+/*Footer start*/
+.footer-container {
+  min-height: 30vh;
 }
+
 ul {
   list-style: none;
   padding-left: 0;
@@ -162,10 +149,9 @@ body {
   min-height: 100vh;
   flex-direction: column;
 }
-.container {
-  flex: 1;
-}
-/* Footer main */
+
+/* Footer main*/
+
 .ft-main {
   padding: 1.25rem 1.875rem;
   display: flex;
@@ -222,4 +208,4 @@ input[type="submit"] {
 .ft-legal-list li:nth-last-child(2) {
   flex: 1;
 }
-/* Footer */
+/* Footer end */
