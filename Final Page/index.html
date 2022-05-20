@@ -37,19 +37,14 @@
             </div>
           </div>
         </div>
-        <div id="showSearch" >
-            <div class="searchContent">
-                <div class="close-btn" onclick="removeSearch()">&times;</div>
-                <input type="search" class="input" name="txt" 
-                    placeholder="Search here" >
-            </div>
-        </div>
         <div class="navbar-right">
-            <div class="box">
-                <label name="search">
-                    <button class="search-icon" value="search" onclick="showSearch()"><i class="fa fa-search"></i></button>
-                </label>
+           
+             <div class="search">
+              <div class="searchIcon"></div>
+              <div class="searchInput">
+                <input type="search" placeholder="Search" id="mySearch" >
               </div>
+             </div>
         </div>
       </nav>
     </header>
@@ -111,11 +106,11 @@
       </section>
     </footer>
     <script>
-        function showSearch(){
-            document.getElementById("showSearch").style.display="block";
-        }
-        function removeSearch(){
-            document.getElementById("showSearch").style.display="none";
+       
+        const icon = document.querySelector('.searchIcon');
+        const search = document.querySelector('.search');
+        icon.onclick = function(){
+          search.classList.toggle('active')
         }
     </script>
   </body>
