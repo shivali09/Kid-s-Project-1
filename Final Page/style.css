@@ -73,44 +73,11 @@
   display: flex;
   justify-content: right;
 }
-
-/* Header end*/
-
-
-.searchContent input {
-  width: 20rem;
-  background: gray;
-  opacity: 65%;
-  border-radius: 5px;
-  padding: 1rem;
-  height: 1rem;
-  border: 2px solid #ffc94b;
-  font-size: 1rem;
-  color: white;
-  outline: none;
-  font-weight: 700;
-}
-
-.searchContent input::placeholder {
-  font-size: 1rem;
-  color: white;
-  font-weight: 700;
-}
-.box{
-  padding-top: 1.3rem;
-}
-.box .search-icon {
-  background: none;
-  border: none;
-  font-size: 2rem;
-  color: white;
-  
-}
-
-.search{
+/* search start*/
+.search {
   position: relative;
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   top: 1rem;
   border: none;
   border-radius: 60px;
@@ -120,12 +87,12 @@
   overflow: hidden;
 }
 
-.search .searchIcon{
+.search .searchIcon {
   position: absolute;
   top: 0;
   left: 0;
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   background-color: white;
   border-radius: 60px;
   display: flex;
@@ -135,31 +102,30 @@
   cursor: pointer;
 }
 
-.search.active{
+.search.active {
   width: 360px;
 }
 
-.search .searchIcon::before{
-  content: '';
+.search .searchIcon::before {
+  content: "";
   position: absolute;
-  width: 15px;
-  height: 15px;
+  width: 12px;
+  height: 12px;
   border: 3px solid #ffc94b;
   border-radius: 50%;
-  transform: translate(-4px,-4px);
+  transform: translate(-4px, -4px);
 }
 
-
-.search .searchIcon::after{
-  content: '';
+.search .searchIcon::after {
+  content: "";
   position: absolute;
   width: 3px;
-  height: 12px;
+  height: 11px;
   background: #ffc94b;
-  transform: translate(6px,6px) rotate(315deg);
+  transform: translate(6px, 6px) rotate(315deg);
 }
 
-.search .searchInput{
+.search .searchInput {
   position: relative;
   width: 300px;
   height: 60px;
@@ -169,7 +135,7 @@
   align-items: center;
 }
 
-.search .searchInput input{
+.search .searchInput input {
   position: absolute;
   top: 0;
   width: 100%;
@@ -177,9 +143,14 @@
   border: none;
   outline: none;
   font-size: 1rem;
-  padding: 10px 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
   color: gray;
 }
+
+/*Search end*/
+
+/* Header end*/
 
 /* Main start*/
 .main-container {
@@ -195,10 +166,10 @@
   color: white;
 }
 
-.tagline h1{
+.tagline h1 {
   font-size: 3rem;
 }
-.tagline h3{
+.tagline h3 {
   font-size: 2rem;
 }
 
@@ -297,3 +268,4 @@ input[type="submit"] {
   flex: 1;
 }
 /* Footer end */
+
