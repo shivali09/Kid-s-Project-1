@@ -25,7 +25,7 @@
 }
 
 .dropdown .dropbtn {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   border: none;
   outline: none;
   color: white;
@@ -78,7 +78,7 @@
 
 .search-btn {
   border: none;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 600;
   background-color: inherit;
   color: white;
