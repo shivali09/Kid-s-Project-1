@@ -7,18 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
   </head>
   <body>
     <!--Header-->
     <header class="header-container">
       <!--Navigation Bar-->
       <nav class="navbar">
+        <!--Left Navbar with three items-->
         <div class="navbar-left">
-          <!--Logo-->
+          <!--Item 1 : Logo-->
           <div>
             <img src="./logo/logo.png" class="logo" height="90" />
           </div>
+          <!--Item:2-->
           <div class="dropdown">
             <button class="dropbtn">
               Topics <i class="fa fa-caret-down"></i>
@@ -30,6 +31,7 @@
               <a href="#">BodyParts</a>
             </div>
           </div>
+          <!--Item:3-->
           <div class="dropdown">
             <button class="dropbtn"> Contest </button>
             <div class="dropdown-content">
@@ -37,14 +39,26 @@
             </div>
           </div>
         </div>
+
+        <!-- Right Navbar With only one item i.e search -->
         <div class="navbar-right">
-           
-             <div class="search">
-              <div class="searchIcon"></div>
-              <div class="searchInput">
-                <input type="search" placeholder="Search" id="mySearch" >
-              </div>
-             </div>
+          <button id = "search-btn" class="search-btn">Search</button>             
+        </div>
+      
+        <!-- For Search Modal -->
+        <div class="bg-search-modal">
+          <div id="close-btn">&times;</div>
+          <div class="search-modal">
+              <input type="text" placeholder="Search">
+              <button class = "search-btn"><a href="#" target="_blank">Search</a></button> 
+          </div>                                
+        </div>
+
+        <!-- Hamburger Menu -->
+        <div class="hamburger-menu">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
         </div>
       </nav>
     </header>
@@ -106,11 +120,22 @@
       </section>
     </footer>
     <script>
-        const icon = document.querySelector('.searchIcon');
-        const search = document.querySelector('.search');
-        icon.onclick = function(){
-          search.classList.toggle('active')
-        }
+       document.getElementById('search-btn').addEventListener('click', function () {
+        document.querySelector('.bg-search-modal').style.display = 'flex';
+      });
+      document.getElementById('close-btn').addEventListener('click', function () {
+        document.querySelector('.bg-search-modal').style.display = 'none';
+      });
+      hamburger = document.querySelector('.hamburger-menu')
+      leftnavbar = document.querySelector('.navbar-left')
+      rightnavbar = document.querySelector('.navbar-right')
+      navbar = document.querySelector('.navbar')
+
+      hamburger.addEventListener('click', ()=>{
+          leftnavbar.classList.toggle('.v-navbar');
+          rightnavbar.classList.toggle('.v-navbar');
+          navbar.classList.toggle('.h-navbar');
+});
     </script>
   </body>
 </html>
