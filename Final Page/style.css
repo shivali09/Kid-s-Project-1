@@ -1,53 +1,64 @@
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  list-style-type: none;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
-/*Header start*/
-.header-container {
-  background-color: #ffc94b;
-  color: white;
+img {
+  height: 80px;
+  width: 80px;
 }
 
 .navbar {
   display: flex;
-  justify-content: space-between;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  align-items: center;
+  background-color: #ffc94b;
+  
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  padding: 0px 100px;
+  width: 75%;
+  color: white;
+  gap: 7.5rem;
 }
 
 .dropdown {
-  float: left;
-  overflow: hidden;
-  padding-top: 2rem;
-  padding-bottom: 1.2rem;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
-.dropdown .dropbtn {
-  font-size: 1.5rem;
+.dropdown .dropdown-btn {
+  font-size: 1.5rem;  
   border: none;
-  outline: none;
   color: white;
+  padding: 5px;
   background-color: inherit;
   font-weight: 600;
 }
 
-.dropdown:hover .dropbtn {
+.dropdown:hover .dropdown-btn {
   text-decoration: underline;
 }
 
-.dropdown-content {
+.dropdown .dropdown-content {
   display: none;
-  position: fixed;
+  position: absolute;
   background-color: #f9f9f9;
-  min-width: 4rem;
-  box-shadow: 0rem 0.2rem 2rem 0rem rgb(0 0 0 / 20%);
-  z-index: 1;
+  min-width: 100px;
+  font-size: 20px;
+  font-weight: 500;
 }
 
-.dropdown-content a {
-  float: none;
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown .dropdown-content a {
   color: black;
   padding: 12px 16px;
   text-decoration: none;
@@ -55,7 +66,7 @@
   text-align: left;
 }
 
-.dropdown-content a:hover {
+.dropdown .dropdown-content a:hover {
   background-color: #ddd;
 }
 
@@ -63,19 +74,15 @@
   display: block;
 }
 
-.navbar-left {
-  display: flex;
-  justify-content: space-between;
-  gap: 5rem;
-}
-
 .navbar-right {
+  width: 25%;
   display: flex;
   justify-content: right;
-  /* padding-left: 25rem; */
+  align-items: center;
+  margin-right: 5%;
 }
-/* Search start*/
 
+/* search start*/
 .search-btn {
   border: none;
   font-size: 1.5rem;
@@ -86,12 +93,12 @@
 
 .bg-search-modal {
   width: 90%;
-  height: 100%;
+  height: 90%;
   background-color: rgb(63, 54, 54);
   opacity: 0.9;
   position: absolute;
-  top: 5%;
   left: 5%;
+  top: 5%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -99,31 +106,29 @@
 }
 .search-modal {
   width: 600px;
-  height: 700px;
+  height: 650px;
   background-image: url(./images/board.png);
   background-repeat: no-repeat;
   background-size: 100%;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
   flex-direction: column;
 }
 
 .search-modal input {
-  margin-top: 68%;
-  margin-left: 20%;
+  margin-top: 70%;
   width: 350px;
   height: 80px;
   border-radius: 15px;
   background-color: none;
   font-size: 1.2rem;
   padding-left: 1rem;
+  margin-bottom: 5%;
   font-weight: 600;
   border: none;
 }
 
 .search-modal .search-btn {
-  margin-bottom: 25%;
-  margin-left: 40%;
   background-color: #9b633b;
   width: 100px;
   height: 40px;
@@ -142,13 +147,15 @@
   top: 5%;
   left: 95%;
   cursor: pointer;
+  color: aliceblue;
 }
 
 /*Search end*/
 
-/* Header end*/
 
-/* Main start*/
+
+
+/* Main Container */
 .main-container {
   background-image: url(https://img.freepik.com/free-photo/cheerful-student-writing-holding-books_1098-3439.jpg?size=626&ext=jpg&ga=GA1.2.1503742435.1652435681);
   background-repeat: no-repeat;
@@ -169,17 +176,11 @@
   font-size: 2rem;
 }
 
-/*Main end */
+/* Main Container End */
 
-/*Footer start*/
-.footer-container {
-  min-height: 30vh;
-}
 
-ul {
-  list-style: none;
-  padding-left: 0;
-}
+/* Footer */
+
 footer {
   background-color: #660746;
   color: #bbb;
@@ -204,9 +205,10 @@ body {
   min-height: 100vh;
   flex-direction: column;
 }
-
-/* Footer main*/
-
+.container {
+  flex: 1;
+}
+/* Footer main */
 .ft-main {
   padding: 1.25rem 1.875rem;
   display: flex;
@@ -261,16 +263,14 @@ input[type="submit"] {
 }
 /* one before the last child */
 .ft-legal-list li:nth-last-child(2) {
-  flex: 1;
+    flex: 1;
 }
-/* Footer end */
-
 
 
 /* Media */
 
 
-.hamburger-menu {
+#hamburger-menu {
   display: none;
   position: absolute;
   cursor: pointer;
@@ -298,13 +298,20 @@ input[type="submit"] {
     text-align: center;
     margin: 0px;
   } 
-  .hamburger-menu {
+  #hamburger-menu {
     display: block;
-  }   
-  .h-navbar {
-    height: 90px;
   }
-  .v-navbar {
-    opacity: 0%;
-  } 
+  .navbar-left {
+    display: none;
+  }
+  .navbar-right {
+    display: none;
+  }
+  .navbar-left.active {
+    display: flex;
+  }
+  .navbar-right.active {
+    display: flex;
+    justify-content: center;
+  }
 }
