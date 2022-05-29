@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@200;300&family=Roboto+Slab:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family:'Roboto Slab', serif;
+    background: white;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 80px
+}
+
+.container a img {
+    width: 200px;
+}
+
+.nav {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    font-size: 25px;
+    color: gray;
+}
+
+.list-1:hover {
+    color: black;
+    cursor: pointer;
+}
+
+.list-2:hover {
+    color: black;
+    cursor: pointer;
+}
+
+.list-3:hover {
+    color: black;
+    cursor: pointer;
+}
+
+.list-4:hover {
+    color: black;
+    cursor: pointer;
+}
+
+.list-5:hover {
+    color: black;
+    cursor: pointer;
+}
+
+.list-6:hover {
+    color: black;
+    cursor: pointer;
+}
+
+.side-content {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.search-btn {
+    width: 250px;
+    height: 30px;
+    font-size: 20px;
+    font-style: italic;
+    text-align: left;
+    padding: 15px;
+    border: black 2px solid;
+    border-radius: 15px;
+}
+
+.Log-in-btn {
+    color: black;
+    background: white;
+    font-size: 20px;
+    border: black 2px solid;
+    border-radius: 5px;
+    width: 100px;
+    height: 50px;
+    font-style: inherit;
+}
+
+.Log-in-btn:hover {
+    color: white;
+    background: black;
+    cursor: pointer;
+}
+
+.Sign-up-btn {
+    background: black;
+    color: white;
+    font-size: 20px;
+    border: none;
+    width: 100px;
+    height: 50px;
+    font-weight: 500;
+    border: black 2px solid;
+    border-radius: 5px;
+}
+
+.Sign-up-btn:hover {
+    cursor: pointer;
+    background: white;
+    color: black;
+}
+
+
+header {
+    border-bottom: black 3px solid; 
+}
