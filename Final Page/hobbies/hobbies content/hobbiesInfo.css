@@ -1,25 +1,223 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+body {
+  background-color: black;
+  color: white;
+}
+
+/*Header start*/
+.navbar {
+  display: flex;
+  background-color: #ffc94b;
+  align-items: center;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  padding: 0px 2rem;
+  width: 75%;
+  color: white;
+  gap: 7.5rem;
+}
+
+/*Header end*/
+/*main start*/
+
+.main-container {
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+/*Yoga start*/
+.yoga {
+  background: linear-gradient(to right, black, grey);
+  display: flex;
+  border: none;
+  justify-content: space-evenly;
+}
+
+.yoga-content {
+  margin-top: 1rem;
+}
+
+.yoga-content h1 {
+  padding-top: 2rem;
+  font-size: 2rem;
+}
+
+.yoga-content h3 {
+  padding: 1.2rem 0rem;
+  font-size: 2rem;
+}
+
+.yoga-content p {
+  padding-top: 1.2rem;
+  padding-right: 1rem;
+  line-height: 1.5rem;
+  text-align: justify;
+}
+
+/* yoga end*/
+
+/*gardening start*/
+
+.gardening {
+  background: linear-gradient(to left, black, grey);
+  display: flex;
+  border: none;
+  justify-content: space-evenly;
+}
+
+.gardening h1 {
+  padding-top: 2rem;
+  padding-left: 2rem;
+  font-size: 2rem;
+}
+
+.gardening p {
+  padding-top: 1.2rem;
+  padding-left: 2rem;
+  line-height: 1.5rem;
+  text-align: justify;
+}
+
+/* gardening end*/
+
+/* origami start*/
+
+.origami {
+  background: linear-gradient(to right, black, grey);
+  display: flex;
+  border: none;
+  justify-content: space-evenly;
+}
+
+.origami p {
+  padding-top: 1.2rem;
+  padding-right: 1rem;
+  line-height: 1.5rem;
+  text-align: justify;
+}
+
+.origami h1 {
+  padding-top: 2rem;
+  font-size: 2rem;
+}
+/*origami end*/
+
+/*martial arts start*/
+
+.martial-arts {
+    background: linear-gradient(to left, black, grey);
+    display: flex;
+    border: none;
+    justify-content: space-evenly;
   }
   
-  .navbar{
-    display: flex;
-    background-color: #FFC94B;
-    align-items: center;
+  .martial-arts h1 {
+    padding-top: 2rem;
+    padding-left: 2rem;
+    font-size: 2rem;
   }
   
-  .navbar-left {
-    display: flex;
-    align-items: center;
-    padding: 0px 2rem;
-    width: 75%;
-    color: white;
-    gap: 7.5rem;
+  .martial-arts p {
+    padding-top: 1.2rem;
+    padding-left: 2rem;
+    line-height: 1.5rem;
+    text-align: justify;
   }
-  .main-container{
-    background-color: black;
-    color: white;
+/*martial arts end*/
+
+/* main end*/
+
+/* Footer */
+
+footer {
+  background-color: #660746;
+  color: #bbb;
+  line-height: 1.5;
+}
+footer a {
+  text-decoration: none;
+  color: #eee;
+}
+a:hover {
+  text-decoration: underline;
+}
+.ft-title {
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.375rem;
+  padding-bottom: 0.625rem;
+}
+/* Sticks footer to bottom */
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+.container {
+  flex: 1;
+}
+/* Footer main */
+.ft-main {
+  padding: 1.25rem 1.875rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+@media only screen and (min-width: 29.8125rem /* 477px */) {
+  .ft-main {
+    justify-content: space-evenly;
   }
+}
+@media only screen and (min-width: 77.5rem /* 1240px */) {
+  .ft-main {
+    justify-content: space-evenly;
+  }
+}
+.ft-main-item {
+  padding: 1.25rem;
+  min-width: 12.5rem;
+}
+
+/* Footer main | Newsletter form */
+form {
+  display: flex;
+  flex-wrap: wrap;
+}
+input[type="email"] {
+  border: 0;
+  padding: 0.625rem;
+  margin-top: 0.3125rem;
+}
+input[type="submit"] {
+  background-color: #00d188;
+  color: #fff;
+  cursor: pointer;
+  border: 0;
+  padding: 0.625rem 0.9375rem;
+  margin-top: 0.3125rem;
+}
+/* Footer legal */
+.ft-legal {
+  padding: 0.6rem 1.875rem;
+  background-color: #333;
+}
+.ft-legal-list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.ft-legal-list li {
+  margin: 0.125rem 0.625rem;
+  white-space: nowrap;
+}
+/* one before the last child */
+.ft-legal-list li:nth-last-child(2) {
+  flex: 1;
+}
