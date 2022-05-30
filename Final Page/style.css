@@ -21,7 +21,7 @@ img {
 .navbar-left {
   display: flex;
   align-items: center;
-  padding: 0px 100px;
+  padding: 0px 2rem;
   width: 75%;
   color: white;
   gap: 7.5rem;
@@ -42,7 +42,7 @@ img {
 }
 
 .dropdown:hover .dropdown-btn {
-  text-decoration: underline;
+  background: linear-gradient(to right, black,grey);
 }
 
 .dropdown .dropdown-content {
@@ -89,6 +89,11 @@ img {
   font-weight: 600;
   background-color: inherit;
   color: white;
+  padding: 5px;
+}
+
+.search-btn:hover{
+  background: linear-gradient(to right, black,grey);
 }
 
 .bg-search-modal {
