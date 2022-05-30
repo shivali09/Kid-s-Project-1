@@ -10,11 +10,9 @@
     background-color: #FFC94B;
     align-items: center;
   }
-  
-  /* img {
-    height: 80px;
-    width: 80px;
-  } */
+  .bg-img{
+      padding: 20px 0px;
+  }
   
   .navbar-left {
     display: flex;
