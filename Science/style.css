@@ -1,0 +1,175 @@
+
+/*---------------------------------------------------body------------------------------------------------*/
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/*------------------------------------------------header-------------------------------------------------*/
+header{
+    width: 100%;
+   height: 240px;
+   top: -50px;
+    background:url(./image/header1.webp) center center/cover;
+    border-bottom: 5px solid rgb(114, 207, 198);
+    position: relative;
+}
+
+
+/*---------------------------------------------main page-------------------------------------------------*/
+.content{
+   
+    width: 100%;
+     height: 100vh;
+    margin-top: -50px;
+    display: flex;
+      
+}
+
+.content img{
+    float: right;
+}
+
+
+/*-------------------------------------------navigation----------------------------------------------------*/
+.navigation{
+    position: relative;
+   width: 50px;
+   height: 100%;
+   background: rgb(87, 198, 215);
+   transition: 0.5s;
+   overflow: hidden;
+}
+
+.navigation:hover{
+    width: 350px;
+}
+
+.navigation ul{
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+}
+
+.navigation li{
+    position: relative;
+   list-style: none;
+    width: 100%;
+}
+
+.navigation li a{
+    position: relative;
+   display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navigation li:hover{
+    background-color: #ea1d63;
+    
+}
+
+.navigation li a.active{
+    background-color: #de9cb2;
+    color: rgb(97, 82, 82);
+}
+
+.navigation li a .icon{
+    position: relative;
+   
+    min-width: 60px;
+    height: 40px;
+    line-height: 100px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.navigation li a .title{
+    position: relative;
+   
+   padding: 0 10px;
+    height: 80px;
+    line-height: 100px;
+    text-align: start;
+    font-size: 20px;
+    white-space: nowrap;
+    font-family: 'Lobster', cursive;
+}
+
+/*-------------------------------------------------Center grid---------------------------*/
+
+.main-grid{
+    position: relative;
+    width: 60%;
+    padding: 40px;
+   margin-left:  100px;
+   margin-right: 100px;
+  
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(3,1fr);
+    row-gap: 10px;
+   column-gap: 20px;
+  
+   
+}
+
+#gif1{
+    position: relative;
+     width: 300px;
+  
+}
+
+
+/*--------------------------------------------------Each-Grid--------------------------------------*/
+.exp{
+    background-color: rgba(236, 217, 12, 0.3);
+    transition: 0.5s;
+    border-radius: 10px;
+    
+}
+
+.exp:hover{
+    box-shadow: 2px 2px 20px 2px #b62773;
+}
+
+.exp img{
+    position: relative;
+    margin:  30px 40px;
+    width: 70%;
+    
+}
+
+.exp a{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    font-size: 20px;
+   
+}
+
+.text{
+    border-radius: 10px;
+    background-color: #56162b;
+    color: white;
+    padding: 5px;
+    font-size: 30px;
+    font-family: 'Blaka', cursive;
+}
+
+.expname{
+    position: relative;
+    padding: 5px;
+    font-family: 'Lobster', cursive;
+    font-size: 25px;
+}
+
+.expsub{
+    position: relative;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-family: 'Pacifico', cursive;
+}
