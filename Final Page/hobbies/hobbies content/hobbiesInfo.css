@@ -133,6 +133,60 @@ body {
   }
 /*martial arts end*/
 
+/*Reading start*/
+.reading {
+  background: linear-gradient(to right, black, grey);
+  display: flex;
+  border: none;
+  justify-content: space-evenly;
+}
+
+.reading-content {
+  margin-top: 1rem;
+}
+
+.reading-content h1 {
+  padding-top: 2rem;
+  font-size: 2rem;
+}
+
+.reading-content h3 {
+  padding: 1.2rem 0rem;
+  font-size: 2rem;
+}
+
+.reading-content p {
+  padding-top: 1.2rem;
+  padding-right: 1rem;
+  line-height: 1.5rem;
+  text-align: justify;
+}
+
+/* Reading end*/
+
+/*Outdoor games start*/
+
+.outdoor-games {
+  background: linear-gradient(to left, black, grey);
+  display: flex;
+  border: none;
+  justify-content: space-evenly;
+}
+
+.outdoor-games h1 {
+  padding-top: 2rem;
+  padding-left: 2rem;
+  font-size: 2rem;
+}
+
+.outdoor-games p {
+  padding-top: 1.2rem;
+  padding-left: 2rem;
+  line-height: 1.5rem;
+  text-align: justify;
+}
+/*Outdoor games end*/
+
 /* main end*/
 
 /* Footer */
