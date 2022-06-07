@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Science</title>
+    <link rel="stylesheet" href="./quiz.css">
+   
+   <link rel="stylesheet" 
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@1,300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@1,300&family=Blaka&display=swap" rel="stylesheet">
+
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+
+</head>
+<body>
+    <div class="main">
+        <header>
+            <img src="../Final Page/logo/logo.png" alt="logo" width="240px" height="240px">
+             </header>
+       
+        <div class="content">
+            
+            <div class="navigation">
+                <ul >
+                    
+                    <li>
+                        <a href="../Final Page/index.html">
+                            <span class="icon"><i class="fa-solid fa-house-user" id="home"></i></span>
+                            <span class="title">HOME</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="./science.html">
+                            <span class="icon"><i class="fa-solid fa-flask" id="experiment"></i></span>
+                            <span class="title">EXPERIMENTS</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <span class="icon"><i class="fa-solid fa-comment-dots"></i></span>
+                            <span class="title">FUN FACTS</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <span class="icon"><i class="fa-solid fa-book"></i></span>
+                            <span class="title">LESSON</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="active">
+                            <span class="icon"><i class="fa-solid fa-lightbulb"></i></span>
+                            <span class="title">QUIZ</span>
+                        </a>
+                    </li>
+                </ul>
+                
+            </div>
+            <div class="center">
+              <div class="quiz">
+                  <div class="show" id="quiz-1">
+                <div class="ques">
+                    Q1: What we added to float the egg in water?
+                </div>
+                <div class="answer">
+                    <button class="wrong">Kerosene Oil</button>
+                    <button class="correct" onclick="winner()">Salt
+                    </button>
+                    <button class="wrong">Sugar</button>
+                    <button class="wrong">Ink</button>
+                </div>
+                </div>
+
+                <div class="move" id="quiz-2">
+                    <div class="ques">
+                        Q2: What we added to volcano to make it erupt?
+                    </div>
+                    <div class="answer">
+                        <button>Kerosene Oil</button>
+                        <button>Salt</button>
+                        <button>Sugar</button>
+                        <button>Ink</button>
+                    </div>
+                    </div>
+
+                    <div class="move" id="quiz-3">
+                        <div class="ques">
+                            Q3: What we added to volcano to make it erupt?
+                        </div>
+                        <div class="answer">
+                            <button>Kerosene Oil</button>
+                            <button>Salt</button>
+                            <button>Sugar</button>
+                            <button>Ink</button>
+                        </div>
+                        </div>
+
+                        <div class="move" id="quiz-4">
+                            <div class="ques">
+                                Q4: What we added to volcano to make it erupt?
+                            </div>
+                            <div class="answer">
+                                <button>Kerosene Oil</button>
+                                <button>Salt</button>
+                                <button>Sugar</button>
+                                <button>Ink</button>
+                            </div>
+                            </div>
+
+                            <div class="move" id="quiz-5">
+                                <div class="ques">
+                                    Q5: What we added to volcano to make it erupt?
+                                </div>
+                                <div class="answer">
+                                    <button>Kerosene Oil</button>
+                                    <button>Salt</button>
+                                    <button>Sugar</button>
+                                    <button>Ink</button>
+                                </div>
+                                </div>
+
+                                <div class="move" id="quiz-6">
+                                    <div class="ques">
+                                        Q6: What we added to volcano to make it erupt?
+                                    </div>
+                                    <div class="answer">
+                                        <button>Kerosene Oil</button>
+                                        <button>Salt</button>
+                                        <button>Sugar</button>
+                                        <button>Ink</button>
+                                    </div>
+                                    </div>
+
+                      
+
+                <div class="btn-1">
+                    <button id="back" onclick="back()">Back</button>
+                    <button id="next" onclick="next()">Next</button>
+                </div>
+                </div>
+              
+            </div>
+          
+            <div class="right">
+                
+            <img src="./image/boom1.gif" alt="boom"  id="gif1">
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+         var count = 1;
+        
+        function next(){
+           
+           if(count==1){
+           document.getElementById("quiz-2").className="show";
+           document.getElementById("quiz-1").className="move";
+           count++;}
+
+           else if(count==2){
+            document.getElementById("quiz-3").className="show";
+           document.getElementById("quiz-2").className="move";
+           count++;
+
+           }
+
+           else if(count==3){
+            document.getElementById("quiz-4").className="show";
+           document.getElementById("quiz-3").className="move";
+           count++;
+
+           }
+
+           else if(count==4){
+            document.getElementById("quiz-5").className="show";
+           document.getElementById("quiz-4").className="move";
+           count++;
+
+           }
+
+           else if(count==5){
+            document.getElementById("quiz-6").className="show";
+           document.getElementById("quiz-5").className="move";
+           count++;
+
+           }
+
+           else if(count==6){
+            document.getElementById("quiz-1").className="show";
+           document.getElementById("quiz-6").className="move";
+               count = 1;
+           console.log(count);
+
+           }
+
+         
+        }
+           
+        function back(){
+           
+      
+            if(count==3){
+           document.getElementById("quiz-2").className="show";
+           document.getElementById("quiz-3").className="move";
+           count--;}
+
+           else if(count==4){
+            document.getElementById("quiz-3").className="show";
+           document.getElementById("quiz-4").className="move";
+           count--;
+
+           }
+
+           else if(count==5){
+            document.getElementById("quiz-4").className="show";
+           document.getElementById("quiz-5").className="move";
+           count--;
+
+           }
+
+           else if(count==6){
+            document.getElementById("quiz-5").className="show";
+           document.getElementById("quiz-6").className="move";
+           count--;
+
+           }
+
+           else if(count==1){
+            document.getElementById("quiz-6").className="show";
+           document.getElementById("quiz-1").className="move";
+           count = 6;
+
+           }
+
+           else if(count==2){
+            document.getElementById("quiz-1").className="show";
+           document.getElementById("quiz-2").className="move";
+          count--;
+           }
+
+        }
+
+
+    </script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js">
+</script>
+<script src="jquery.click-firewords.js"></script>
+<script type="text/javascript">
+    $(function () {
+  $('.correct').clickFireworks({
+
+    // canvas id
+    id: 'fireworks', 
+    
+    // append canvas to where, default is body
+    appendTo: 'body', 
+
+    // canvas z-index, make it higher than anything on the page
+    zIndex: 1000 
+    
+  });
+  
+});
+
+                          
+let winner = () => new Audio("./audio/F97Q8RZ-cartoon-girl-yipee.mp3"  aud).play();
+ 
+</script>
+</body>
+</html>

@@ -24,10 +24,10 @@
  
  header img{
      position: relative;
-     width: 180px; height: 180px;
+     width: 180px; height: 140px;
      float: right;
     
-     top: -55px;
+     top: -15px;
       
  }
  
@@ -79,12 +79,13 @@
      margin-left: 30px;
  }
  
- .main img{
-      margin-left: 150px;
+ .main{
+     display: flex;
+     justify-content: space-between;  
  }
  
  .main img{
-     margin-right: 100px;
+     margin-right: 50px;
  }
  
  button{
